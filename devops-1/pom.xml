@@ -36,7 +36,26 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-    </dependencies>
+        </dependencies>
+
+	 <distributionManagement>
+   <snapshotRepository>
+      <id>nexus-Release</id>
+      <url>http://localhost:8081/repository/UBA-Release/</url>
+   </snapshotRepository>
+</distributionManagement>
+
+
+<distributionManagement>
+   <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://localhost:8081/repository/UBA-Snapshot/</url>
+   </snapshotRepository>
+</distributionManagement>
+
+
+
+
 
     <build>
         <finalName>basic-webapp</finalName>
